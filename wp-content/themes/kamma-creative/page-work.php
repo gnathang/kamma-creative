@@ -2,7 +2,7 @@
 /**
  * Template Name: Work
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- * @package hair-mechanics
+ * 
 */
 
 get_header('all-projects');
@@ -14,7 +14,6 @@ get_header('all-projects');
 				get_template_part('template-parts/content-all-projects');
 				get_template_part('template-parts/content-contact-small');
 			?>
-
 	
 	</main><!-- #main -->
 

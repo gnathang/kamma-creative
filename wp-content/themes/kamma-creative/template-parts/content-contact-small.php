@@ -10,7 +10,6 @@
     </a>
     <div class="flex center items-center justify-center pv3">
       <a class="contact-button w4 w5-ns  ba bw1 pa2 tc mh3 fw4" href="/contact" class="contact-link">Contact Us</a>
-      <!-- <a class="w5 ba pa2 tc mh3 fw4" href="mailto:gabrielnathan@hotmail.co.uk">email here</a> -->
     </div>
   </div>
  
