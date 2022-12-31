@@ -1,0 +1,430 @@
+
+body {
+  /* background-color:#ffe4c4; */
+  background-color:#efdddd;
+  /* background-color:#F4ECEC; */
+  color:#634c73;
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 p {
+  margin-block-start:0;
+  margin-block-end:0; 
+  margin-inline-start:0;
+  margin-inline-end:0;
+  padding-block-start:0;
+  padding-block-end:0;
+  padding-inline-start:0;
+  padding-inline-end:0;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.entry-content {
+  font-size: 26px;
+}
+
+/* FONT COLORS */
+
+.tibet-red {
+  color: #ba1133 !important;
+}
+
+.mauve {
+  color: #634c73;
+}
+
+.brand-purple {
+  color: #634c73;
+}
+
+.light-mauve {
+  color:#efdddd;
+}
+
+.lighter-mauve {
+  color:#dbdbdbd2;
+}
+
+
+/* TYPES */
+
+.cormorant {
+  font-family: 'Cormorant', sans-serif;
+}
+.syne {
+  font-family: 'Syne', sans-serif;
+}
+.space-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+.habibi {
+  font-family: 'Habibi', serif;
+}
+.tenali {
+  font-family: 'Tenali Ramakrishna', sans-serif;
+}
+.josefin-sans {
+  font-family: 'Josefin Sans ', sans-serif;
+}
+
+/* HEADER STYLES */
+
+/* extra tagline */
+.site-title:after {
+content: ' Creative';
+color:#634c73;
+}
+
+.kamma-logo {
+  /* position: sticky; */
+  width: 100px;
+  transition: 0.5s all;  
+  /* background-image: url('/wp-content/themes/kamma-creative/images/kamma-logo.svg'); */
+}
+
+.color-change {
+  /* display: none; */
+  filter: brightness(0) saturate(100%) invert(88%) sepia(6%) saturate(460%) hue-rotate(314deg) brightness(106%) contrast(87%);
+}
+
+.main-navigation a {
+  transition: color 0.1s ease;
+}
+
+.main-navigation a:hover {
+  color:#ba1133;
+}
+
+.social-icons:hover {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(90%) saturate(4494%) hue-rotate(340deg) brightness(87%) contrast(95%);
+}
+
+.social-icons,
+.social-icons-footer {
+  filter: invert(30%) sepia(32%) saturate(434%) hue-rotate(232deg) brightness(97%) contrast(82%);
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: all 1s ease;
+}
+
+/* HERO STYLES */
+
+.hero-copy {
+  font-size: 60px;
+  /* border-bottom: 2px solid #634c73; */
+}
+
+.hero-text {
+    border-bottom: 2px solid #634c73;
+}
+
+.typewriter-text::after {
+  content: "";
+  width: 5px;
+  height: 45px;
+  margin-left: 5px;
+  background: #634c73;
+  display: inline-block;
+  animation: cursor-blink 1.5s steps(1) infinite;
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero-container {
+  height: 86vh;
+}
+
+/* INTRO STYLES */
+
+.intro-wrapper {
+  background-color:#EA9D4E;
+}
+
+.intro-h1,
+.what-we-do-h1,
+.what-weve-done-h1,
+.contact-h1 {
+  font-size: 90px;
+  line-height: 0.8;
+  padding-bottom: 15px;
+}
+
+.intro-h2 {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #634c73;
+}
+
+
+/* WHAT WE DO STYLES */
+
+.what-we-do-wrapper {
+  /* background-color: #D53A33; */
+  background-color: #ba1133;
+}
+
+.service-title {
+  border-bottom: 1.5px solid #efdddd;
+}
+
+.service {
+  text-align: center;
+}
+
+.service h1,
+.service p {
+  text-align: left;
+}
+
+
+/* PROJECTS STYLES */
+
+.client-overlay:hover {
+  opacity: 1;
+  /* background-color: red; */
+}
+
+.client-overlay {
+  transition: opacity 0.4s ease-in-out;
+}
+
+
+/* CONTACT STYLES */
+
+.contact-wrapper {
+  background-color: #EA9D4E;
+}
+
+.form-field {
+  background-color: #EA9D4E;
+  border: 2px solid #634c73;
+  padding: 3px;
+  max-width: 500px;
+  color:#634c73;
+}
+
+.form-field::after{
+  border: none;
+}
+
+input:-webkit-autofill, 
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 99999s;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #7a757e !important;
+  opacity: 1;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #7a757e !important;
+  opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #7a757e !important;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #7a757e !important;
+  opacity: 1;
+}
+
+.submit-button {
+  cursor: pointer;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #634c73;
+  color:#EA9D4E;
+} 
+
+.wpcf7-response-output {
+  border: none !important;
+}
+
+.wpcf7-not-valid-tip {
+  color: #7a757e;
+  padding-top: 5px;
+}
+
+
+/* PROJECT (CONTENT.PHP) STYLES */
+
+.project-intro {
+  border-top: 2px solid #634c73;
+}
+
+.visit-site-button {
+  outline: solid 3px #634c73;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.visit-site-button:hover {
+  cursor: pointer;
+  background-color: #634c73;
+  color:#EA9D4E;
+} 
+
+/* FOOTER STYLES */
+
+.site-footer {
+  background-color: #EA9D4E;
+}
+
+.site-icons-footer {
+  transition: filter 0.2s ease;
+}
+
+.social-icons-footer:hover {
+  filter: brightness(0) saturate(100%) invert(78%) sepia(14%) saturate(166%) hue-rotate(314deg) brightness(113%) contrast(95%);
+}
+
+
+/* RESPONSIVE STYLES */
+
+@media (max-width:1384px){
+
+  .site-title {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+}
+
+@media (max-width:1242px){
+
+  .service p {
+
+    font-size: 18px;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+}
+
+@media (max-width: 943px) {
+  .site-title {
+    display: none;
+  }
+}
+
+@media (max-width:1088px) {
+
+  .logo img {
+    width: 60px;
+  }
+
+  .intro-h1,
+  .what-we-do-h1,
+  .what-weve-done-h1,
+  .contact-h1 {
+    font-size: 70px;
+    padding-bottom: 50px;
+    text-align: left;
+  }
+
+  .hero-copy p {
+    font-size: 56px;
+  }
+
+  .service {
+    margin-bottom: 40px;
+  }
+
+  
+}
+
+
+@media (max-width:815px) {
+
+
+  .header-container {
+    justify-content: end;
+  }
+
+  .hero-copy p {
+    font-size: 48px;
+  }
+
+  .form-field {
+    max-width: 400px;
+  }
+
+  .social-icons,
+  .social-icons-footer {
+    max-width: 20px;
+  }
+
+}
+
+@media (max-width:663px) {
+
+  .service-image {
+    margin-left: auto;
+    margin-right: auto;
+    height: 20vh;
+  }
+
+  .form-field {
+    max-width: 300px;
+  }
+}
+
+@media (max-width:539px) {
+  
+  .intro-h1,
+  .what-we-do-h1,
+  .what-weve-done-h1,
+  .contact-h1 {
+    font-size: 50px;
+  }
+
+  .hero-copy p {
+    font-size: 44px;
+  }
+
+  .typewriter-text::after {
+    height: 30px;
+  }
+
+}
+
+@media (max-width:390px) {
+  
+  .intro-h1,
+  .what-we-do-h1,
+  .what-weve-done-h1,
+  .contact-h1 {
+    font-size: 48px;
+  }
+
+  .hero-copy p {
+    font-size: 38px;
+  }
+
+}
+
+
+
+
