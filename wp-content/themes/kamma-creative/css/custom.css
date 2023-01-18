@@ -52,6 +52,10 @@ a:visited {
   color: #634c73;
 }
 
+.brand-chalk-red {
+  color:#C48585; 
+}
+
 .brand-2 {
   color: #9a5a30;
 }
@@ -90,78 +94,31 @@ a:visited {
 /* TYPES */
 
 @font-face {
-  font-family: 'savateitalique';
-  src: url('/fonts/savate/savate-italique-webfont.eot');
-  src: url('savate-italique-webfont.eot?#iefix') format('embedded-opentype'),
-       url('savate-italique-webfont.woff2') format('woff2'),
-       url('savate-italique-webfont.woff') format('woff'),
-       url('savate-italique-webfont.ttf') format('truetype'),
-       url('savate-italique-webfont.svg#savateitalique') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'savateregular';
-  src: url('../fonts/savate/savate-regular-webfont.eot');
-  src: url('../fonts/savate/savate-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/savate/savate-regular-webfont.woff2') format('woff2'),
-       url('../fonts/savate/savate-regular-webfont.woff') format('woff'),
-       url('../fonts/savate/savate-regular-webfont.ttf') format('truetype'),
-       url('../fonts/savate/ssavate-regular-webfont.svg#savateregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'latituderegular';
-  src: url('../fonts/latitude/latitude-regular-webfont.woff2') format('woff2'),
-       url('../fonts/latitude/latitude-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Latitude';
+  src: url('../fonts/latitude/Latitude-Regular.ttf') format('ttf'),
+       url('../fonts/latitude/Latitude-Regular.otf') format('otf'),
+       url('../fonts/latitude/latitude-regular-webfont.woff') format('woff'),
+       url('../fonts/latitude/latitude-regular-webfont.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Lack';
-  src: url('../fonts/Lack-Regular.woff2') format('woff2'),
-      url('../fonts/Lack-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.savate {
-  font-family: 'savateregular', sans-serif;
+  src: url('../fonts/Lack-Regular.otf') format('otf'),
+      url('../fonts/Lack-Regular.woff') format('woff'),
+      url('../fonts/Lack-Regular.woff2') format('woff2');
 }
 
 .latitude {
-  font-family: 'latituderegular', sans-serif;
-}
-
-.latitude-italic {
-  font-family: 'latitudeitalique', sans-serif;
+  font-family: 'Latitude', sans-serif;
 }
 
 .lack {
   font-family: 'Lack', sans-serif;
 }
 
-.cormorant {
-  font-family: 'Cormorant', sans-serif;
-}
+
 .syne {
   font-family: 'Syne', sans-serif;
-}
-.space-grotesk {
-  font-family: 'Space Grotesk', sans-serif;
-}
-.habibi {
-  font-family: 'Habibi', serif;
-}
-.tenali {
-  font-family: 'Tenali Ramakrishna', sans-serif;
-}
-.josefin-sans {
-  font-family: 'Josefin Sans ', sans-serif;
 }
 
 /* HEADER STYLES */
@@ -212,8 +169,8 @@ color:#634c73;
 .menu-menu-container ul {
   position: fixed;
   top: 120px;
-  display: block;
   padding: unset;
+  display: block;
   width: 100%;
   font-size: 80px;
   font-family: 'Latitude', 'Syne', sans-serif;
@@ -223,15 +180,30 @@ color:#634c73;
   text-transform: lowercase;
 }
 
-.menu-menu-container li:first-child {
-  font-family: 'Syne', sans-serif;
-  font-weight: 700;
-  margin-bottom: 10px;
+.menu-menu-container ul li {
+  font-family: 'Latitude', 'Syne', sans-serif;
+  margin-bottom: 5px;
 }
 
-.menu-menu-container li:last-child {
-  font-family: 'Lack', sans-serif;
-}
+/* I have muted the following until I figure out how to 
+   display these webfonts on mobile browsers. */
+
+/*.menu-menu-container li:first-child {*/
+/*  font-family: 'Syne', sans-serif;*/
+/*  font-weight: 200;*/
+/*  margin-bottom: 10px;*/
+/*}*/
+
+/*.menu-menu-container li:nth-child(2) {*/
+/*  font-family: 'Lack' sans-serif;*/
+/*  font-weight: 700;*/
+/*}*/
+
+/*.menu-menu-container li:last-child {*/
+/*  font-family: 'Lack', 'Syne' sans-serif;*/
+/*  font-weight: 700;*/
+/*}*/
+
 
 .open {
   z-index: 3;
@@ -303,10 +275,6 @@ color:#634c73;
   }
 }
 
-.hero-container {
-  height: 100vh;
-}
-
 /* INTRO STYLES */
 
 .intro-wrapper {
@@ -354,6 +322,9 @@ color:#634c73;
 
 /* PROJECTS STYLES */
 
+.see-all-work:hover {
+    text-decoration: underline;
+}
 .client-overlay:hover {
   opacity: 1;
   /* background-color: red; */
@@ -367,15 +338,18 @@ color:#634c73;
   transition: opacity 0.4s ease-in-out;
 }
 
-/* ALL PROJECTS STYLES */
-
-
-
 /* CONTACT STYLES */
 
-/* .contact-wrapper {
-  background-color: #EA9D4E;
-} */
+/* method one for phone antispammers */
+/* span.rev { unicode-bidi:bidi-override; direction:rtl }
+span.rev.phone:before { content:"848 846 " }
+span.rev.phone:after { content:" 44+" } */
+
+/* method two for phone anti spammers */
+
+.hide-phone {
+  display: none;
+}
 
 .form-field {
   /* background-color: #EA9D4E; */
@@ -439,12 +413,17 @@ input:-webkit-autofill:active {
   padding-top: 5px;
 }
 
+/* GABRIEL SECTION STYLES */
+
+.g-social-link {
+  height: 35px;
+}
+
+.g-social-link:hover {
+  filter: invert(50%) sepia(3%) saturate(1597%) hue-rotate(275deg) brightness(88%) contrast(78%);
+}
 
 /* PROJECT (CONTENT.PHP) STYLES */
-
-.project-intro {
-  /* border-top: 2px solid #634c73; */
-}
 
 .visit-site-button {
   border: solid 3px #634c73;
@@ -595,6 +574,10 @@ input:-webkit-autofill:active {
   .contact-h1 {
     font-size: 50px;
   }
+  
+  .hero-container {
+    height: 80vh;
+  }
 
   .hero-copy p {
     font-size: 44px;
@@ -655,14 +638,10 @@ input:-webkit-autofill:active {
 @media (orientation: landscape) and (max-width:815px) {
     
     .hero-container {
-        height: 170vh;
+        height: 100vh;
     }
   
     .hero-copy {
         padding-top: 4rem;
     }
 }
-
-
-
-

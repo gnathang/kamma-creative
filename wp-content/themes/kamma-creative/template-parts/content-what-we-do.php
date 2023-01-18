@@ -4,7 +4,8 @@
 
   // query
   $args = array(
-    'category_name' => 'what-we-do',
+    'name' => 'what-we-do',
+    'post_type' => 'sections',
     'posts_per_page' => 1,
   );
 

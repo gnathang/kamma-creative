@@ -39,7 +39,7 @@
 	<header id="masthead" class="site-header h-10 z-5 w-100 ma0 pv4 flex justify-between items-center">
 		<a href="<?php echo home_url();?>" class="flex items-center w-10 z-5">
 			<div class="logo flex items-center w-100"> &nbsp;
-				<img src="<?php echo get_template_directory_uri().'/images/kamma-logo.svg'?>" class="kamma-logo fixed-l absolute left-2 z-5" href="#">
+				<img src="<?php echo get_template_directory_uri().'/images/kamma-logo.svg'?>" class="kamma-logo fixed-l absolute left-2-ns left-1 z-5" href="#">
 			</div>
 		</a>
 
@@ -80,7 +80,7 @@
 		</div>
 
 		<div class="w-10 tl">
-			<img src="<?php echo get_template_directory_uri().'/images/hamburger.svg'?>" class="hamburger-menu fixed-l absolute right-2 z-5" onclick="showMenu();">
+			<img src="<?php echo get_template_directory_uri().'/images/hamburger.svg'?>" class="hamburger-menu fixed-l absolute right-2-ns right-1 z-5" onclick="showMenu();">
 		</div>
 
 	</header><!-- #masthead -->

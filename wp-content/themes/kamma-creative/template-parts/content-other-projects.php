@@ -7,7 +7,7 @@
     <div class="projects-grid w-100 center flex flex-wrap pt5-ns pt0">  
       <?php
       $args = array(
-        'category_name' => 'projects',
+        'post_type' => 'projects',
         'posts_per_page' => 4,
         'orderby' => 'rand',
         //   here we make sure to exclude the current post that we're looking at

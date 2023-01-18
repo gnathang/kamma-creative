@@ -208,9 +208,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-// we are going to write ourselves a function that 
-// returns us a nicely formated background image.
-
+// a function that returns us a nicely formated background image.
 function nice_background ($project_hero_image) {
 	// we pass in our image field and 
 	// it returns us the image field in a formated fashion.
@@ -244,3 +242,34 @@ function fix_svg() {
         </style>';
 }
 add_action( 'admin_head', 'fix_svg' );
+
+// creating custom post types
+function create_posttype() {
+  register_post_type( 'projects',
+    array(
+      'labels' => array(
+        'name' => __( 'Projects' ),
+        'singular_name' => __( 'Projects' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'work'),
+    )
+  );
+
+	register_post_type( 'sections',
+    array(
+      'labels' => array(
+        'name' => __( 'Sections' ),
+        'singular_name' => __( 'Sections' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'sections'),
+    )
+  );
+}
+add_action( 'init', 'create_posttype' );
+
+// important: rewrites the 'work' page so that it displays itself, rather than displaying the homepage.
+add_rewrite_rule('^work/page/([0-9]+)','index.php?pagename=work&paged=$matches[1]', 'top');

@@ -3,26 +3,31 @@
 
     <?php
       $args = array(
-        'category_name'=>'what-weve-done',
-        'posts_per_page'=>1,
+        'name'=>'what-weve-done',
+        'post_type' => 'sections',
+        'posts_per_page'=> 1
       );
+
       $what_weve_done = new WP_Query($args);
       if ( $what_weve_done->have_posts() ) : while ( $what_weve_done->have_posts() ) : $what_weve_done->the_post();
     ?>
-      <div class="vh-25-l w-75">
+      <div class="w-75">
         <h1 class="what-weve-done-h1 tl ttl fw9 syne"><?php the_field('section_title');?></h1>
       </div>
-      <a href="/work">See all work</p>
+      <a href="/work" class="latitude flex items-center justify-start">
+        <img src="<?php echo get_template_directory_uri(). '/images/arrow-purple.svg'?>" class="mr2 w2-ns w1">
+        <p class="see-all-work f4-ns f5">See all work</p>
+      </a>
       
     <?php
     endwhile;
     endif;
     ?>
 
-    <div class="projects-grid w-100 center flex flex-wrap pt5">  
+    <div class="projects-grid w-100 center flex flex-wrap pt2">  
       <?php
         $args = array(
-          'category_name' => 'projects',
+          'post_type' => 'projects',
           'posts_per_page' => 4,
         );
           $projects = new WP_Query($args);

@@ -1,8 +1,8 @@
 
 <section id="contact-small"class="contact-small-wrapper w-100 center orange-background">
   
-  <div class="contact-small-container w-90 w-80-ns center flex flex-wrap justify center pv5 latitude">
-    <h2 class="center fw1 pv3">If you have a cool idea, or need anything digital, let's have a chat.</h2>
+  <div class="contact-small-container w-90 w-80-ns center flex flex-wrap justify-center pv5 latitude">
+    <h2 class="fw1 pv3 tc f3-ns f4">If you have a cool idea, or need anything digital, let's have a chat.</h2>
     <a class="center w-100 pv4" href="/contact">
       <div class="w-100 flex">
         <img src="<?php echo get_template_directory_uri().'/images/kamma-logo.svg'?>" class="center w3" href="#">

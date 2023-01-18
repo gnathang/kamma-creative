@@ -4,7 +4,7 @@
     <div class="projects-grid w-100 center flex flex-wrap">  
       <?php
         $args = array(
-          'category_name' => 'projects',
+          'post_type' => 'projects',
           'posts_per_page' => 8,
         );
           $projects = new WP_Query($args);
